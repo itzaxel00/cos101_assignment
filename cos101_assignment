@@ -1,0 +1,52 @@
+# clculating speed
+from random import choice
+
+
+def calculate_speed():
+    distance = float(input("Write the distance (in meters): "))  # User input for distance
+    time = float(input("write the time(in seconds): "))  # User input for time
+
+    if time == 0:
+        print("Time cannot be zero. Speed calculation is not possible.")
+    else:
+        speed = distance / time  # Speed calculation
+        print("write your speed")
+
+# calculatig force
+def calculate_force():
+    mass = float(input("write the mass: "))  # User input for mass
+    acceleration = float(input("write the accelaration: "))  # User input for acceleration
+
+    force = mass * acceleration  # Force calculation
+    print("display the force")
+#calculating velocity
+    def calculate_velocity():
+        mass = float(input("write the mass : "))  # User input for mass
+        volume = float(input("write the volume : "))  # User input for acceleration
+
+        force = mass * acceleration  # Force calculation
+        print("display the velocity")
+#calculating power
+        def calculate_power():
+            work = float(input("write the work : "))  # User input for mass
+            time = float(input("write the time : "))  # User input for acceleration
+
+            power= work/time # Force calculation
+            print("display the power")
+
+# Main function to run the program
+def physics_calculator():
+    while True:
+        print("Speed (Distance / Time)")
+        print("Force (Mass * Acceleration)")
+
+        if choice == '1':
+            calculate_speed()  # Call the speed function
+        elif choice == '2':
+            calculate_force()  # Call the force function
+        elif choice == '3':
+            print("Goodbye!")
+
+# Run the program
+if __name__ == "__main__":
+    physics_calculator()
